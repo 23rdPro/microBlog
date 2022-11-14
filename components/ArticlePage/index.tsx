@@ -8,33 +8,7 @@ import ReactMarkdown from "react-markdown";
 
 
 export default function ArticlePage(props: ArticleDetail) {
-    const { article, detailPage, dSetHtml } = props;
-    // const showdown = require('showdown');
-    // const converter = new showdown.Converter();
-    // const mdxToString = converter.makeHtml(article.excerpt)
-    // const content = unified()
-    //     .use(rehypeParse, {
-    //         fragment: true,
-    //     })
-    //     .use(() => {
-    //         return (tree) => {
-    //             visit(tree, 'element', (node) => {
-    //                 if (node.tagName === "h2"){
-    //                     const id = parametrize(node.children[0].value);
-    //                     node.properties.id = id;
-    //                     console.log('tree__----____--___', id);
-    //                 }
-    //             })
-    //             // console.log()
-    //             // console.log('tree__----____--___', tree);
-    //         }
-    //     })
-    //     .use(rehypeStringify)
-    //     .processSync(mdxToString)
-    //     .toString();        
-
-    // if (detailPage)
-     
+    const { article, detailPage, dSetHtml } = props;     
 
     return (
         <article className="flex flex-col shadow my-4">
@@ -67,7 +41,6 @@ export default function ArticlePage(props: ArticleDetail) {
                                     {extractDate(article.date)}
                                 </time>
                 </p>
-                {/* dangerouslySetInnerHTML={{__html:content}} / */}
                 {/* <p className="pb-3 " > 
                     <ReactMarkdown children={article.excerpt} />
                 </p> */}
@@ -83,27 +56,5 @@ export default function ArticlePage(props: ArticleDetail) {
             </div>
         </article>
     );
-
-    // const getTitleHeads = (stringElement: string) => {
-    //     const regex = /<h2>(.*?)<\/h2>/g;
-    //     if (stringElement.match(regex)) {
-    //         return stringElement.match(regex)?.map((heading) => {
-    //             const headerText = heading.replace("<h2>", "").replace("/<h2>", "");
-    //             const link = "#" + headerText.replace(/ /g, "_").toLocaleLowerCase();
-    //             return {
-    //                 text: headerText,
-    //                 link,
-    //             };
-    //         });
-    //     }
-    //     return [];
-    // };
-
-    // const headings = getTitleHeads(`${jsxEelement}`);
-    // console.log("fegberoooooooo_____------_____----____")
-    // console.log(headings)
-
-
-
 }
 
