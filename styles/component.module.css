@@ -1,0 +1,5 @@
+.logo{
+    font-family: var(--logo-font);
+    text-shadow: 4px 4px 4px #aaa;
+    /* font-size: calc((75vw - 4.5rem) / 7); */
+}
