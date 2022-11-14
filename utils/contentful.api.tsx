@@ -1,4 +1,4 @@
-import { ArticleDetail, BlogPostCollections, ItemProps } from "./article.interface";
+import { BlogPostCollections, ItemProps } from "./article.interface";
 import { paginationConfig } from "./article.service";
 
 

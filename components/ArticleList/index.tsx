@@ -1,7 +1,7 @@
-// import { extractDate } from "@utils/article.service";
-// import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-// import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { extractDate } from "@utils/article.service";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { PaginatedListProps } from "@utils/article.interface"
 import Image from "next/image";
 import Link from "next/link";
@@ -36,7 +36,7 @@ export default function ArticleList(params: PaginatedListProps) {
                         <Link href={`article/${article.slug}`} className="text-2xl font-bold hover:text-gray-700 pb-4 prose-headings:prose-blue">
                             <ReactMarkdown>{article.title}</ReactMarkdown>
                         </Link>
-                        {/* <p className="text-sm pb-3">
+                        <p className="text-sm pb-3">
                             By <Link href="https://twitter.com/20thirdPro" className="font-semibold hover:text-blue-800">
                                     <FontAwesomeIcon icon={faTwitter} className="ml-1"/>
                                     <span className="ml-1">
@@ -45,12 +45,12 @@ export default function ArticleList(params: PaginatedListProps) {
                                 </Link> On <time dateTime={extractDate(article.date)}>
                                     {extractDate(article.date)}
                                 </time>
-                        </p> */}
+                        </p>
                         <Link href={`article/${article.slug}`} className="pb-2 prose">
                             <ReactMarkdown>{article.excerpt}</ReactMarkdown>
                         </Link>
                         <Link href={`article/${article.slug}`} className="uppercase text-gray-800 hover:text-black">
-                            {/* Continue Reading <FontAwesomeIcon icon={faArrowRight} />          */}
+                            Continue Reading <FontAwesomeIcon icon={faArrowRight} />         
                         </Link>
                     </div>
                 </article>

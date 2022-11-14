@@ -76,7 +76,7 @@ export async function getStaticProps({ params }: any) {
                             'aria-hidden': 'true'
                         }
                     } as any))
-                    console.log("node", node)
+                    // console.log("node", node)
                 }; 
             })
         }

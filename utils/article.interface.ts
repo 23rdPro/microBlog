@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import { ElementContent } from "react-markdown/lib/ast-to-react";
 
 
 export interface BlogPostCollections {

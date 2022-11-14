@@ -1,5 +1,5 @@
-// import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ArticleDetail } from "@utils/article.interface";
 import { extractDate } from "@utils/article.service";
 import Image from "next/image";
@@ -33,7 +33,7 @@ export default function ArticlePage(props: ArticleDetail) {
                 </h1>
                 <p className="text-sm pb-2">
                     By <Link href="https://twitter.com/20thirdPro" className="font-semibold hover:text-blue-800">
-                                    {/* <FontAwesomeIcon icon={faTwitter} /> */}
+                                    <FontAwesomeIcon icon={faTwitter} />
                                     <span className="ml-1">
                                         {article.author}    
                                     </span>
