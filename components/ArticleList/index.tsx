@@ -1,7 +1,7 @@
 // import { extractDate } from "@utils/article.service";
 // import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { PaginatedListProps } from "@utils/article.interface"
 import Image from "next/image";
 import Link from "next/link";
@@ -50,7 +50,7 @@ export default function ArticleList(params: PaginatedListProps) {
                             <ReactMarkdown>{article.excerpt}</ReactMarkdown>
                         </Link>
                         <Link href={`article/${article.slug}`} className="uppercase text-gray-800 hover:text-black">
-                            Continue Reading <FontAwesomeIcon icon={faArrowRight} />         
+                            {/* Continue Reading <FontAwesomeIcon icon={faArrowRight} />          */}
                         </Link>
                     </div>
                 </article>

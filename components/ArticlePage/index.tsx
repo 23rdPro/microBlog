@@ -1,5 +1,5 @@
 // import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ArticleDetail } from "@utils/article.interface";
 import { extractDate } from "@utils/article.service";
 import Image from "next/image";

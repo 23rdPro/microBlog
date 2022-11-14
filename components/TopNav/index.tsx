@@ -1,5 +1,5 @@
-import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+// import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons"
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export const TopNav = () => {
     return (
@@ -13,13 +13,13 @@ export const TopNav = () => {
 
                 <div className="flex items-center text-lg no-underline text-white pr-6">
                     <a className="" href="https://twitter.com/20thirdPro">
-                        <FontAwesomeIcon icon={faTwitter}/>
+                        {/* <FontAwesomeIcon icon={faTwitter}/> */}
                     </a>
                     <a className="pl-6" href="https://www.linkedin.com/in/23rdpro/">
-                        <FontAwesomeIcon icon={faLinkedin}/>
+                        {/* <FontAwesomeIcon icon={faLinkedin}/> */}
                     </a>
                     <a className="pl-6" href="https://github.com/23rdPro">
-                        <FontAwesomeIcon icon={faGithub}/>
+                        {/* <FontAwesomeIcon icon={faGithub}/> */}
                     </a>
                 </div>
             </div>
