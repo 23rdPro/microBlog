@@ -34,16 +34,12 @@ const Article: NextPage<ArticleDetail> = (props) => {
     );
 }
 
-
-
 export async function getStaticPaths() {
     const posts = await ContentfulApi.getArticles();
-    // const paths = posts.map(post => ({ params: { slug: [ post.slug ] }}))
     const paths = posts.map((post) => ({ params: { slug: [ post.slug ] }}))
 
     return { paths, fallback: false, };
 }
-
 
 export async function getStaticProps({ params }: any) {    
     const article = await (await ContentfulApi.getArticle(params.slug)).pop();
@@ -60,7 +56,9 @@ export async function getStaticProps({ params }: any) {
             visit(tree, 'element', (node) => {
                 if (node.tagName === 'h2') {
                     const pk = parameterize((node.children[0] as any).value);
-                    node.properties?.id ? node.properties?.id : node.properties?.id 
+                    node.properties?.id 
+                     ? node.properties?.id 
+                     : node.properties?.id 
 
                     toc.push({
                         pk,
