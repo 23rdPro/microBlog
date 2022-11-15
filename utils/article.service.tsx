@@ -13,7 +13,7 @@ export const paginationConfig = {
 
 const dev = process.env.NODE_ENV !== 'production';
 
-export const server = dev ? 'http://localhost:3000' : '';
+export const server = dev ? 'http://localhost:3000' : 'https://pythonlikeim5.vercel.app/';
 
 export const siteTitle = "Python Like I am 5";
 
