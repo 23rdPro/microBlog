@@ -13,6 +13,12 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install Vercel CLI
         run: npm install --global vercel@canary
+      - name: Install FontAwesomeSVG
+        run: npm Install @fortawesome/fontawesome-svg-core
+      - name: Install ReactFontAwesome
+        run: npm install @fortawesome/react-fontawesome
+      - name: Install FontAwesomeSVGIcon
+        run: npm install @fortawesome/free-solid-svg-icons
       - name: Pull Vercel Environment Information
         run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
       - name: Build Project Artifacts
